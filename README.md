@@ -32,6 +32,17 @@ git push
 
 ```
 
+### Testing CI/CD pipeline
+
+If all is properly configured, on push, a Github action with the name "CI" should run. There is one job in the CI workflow: run_stuff_on_push and in that one job are three steps.
+1) Checkout the codebase on an ubuntu container
+2) Run a single command (a simple print)
+3) Run multiple lines of commands (some prints and a timestamp)
+
+The workflow will clean up its own resources afterwards. Viewing the committs in the Github actions pane allows you to see the job status and output of each step.
+
+![output](imgs/workflow_status.png)
+
 ### Troubleshooting
 
 * Did you fork the example repo? Or are you trying to push to mine?
@@ -39,7 +50,3 @@ git push
 * Did you need to escape a character in your added echo command?
 * Try editing the shell script in an editor if you are picking up unescaped characters using the append by redirect (`>>`).
 * Is your git configured for pushing/pulling? Credentials in place?
-
-### Testing CI/CD pipeline
-
-
