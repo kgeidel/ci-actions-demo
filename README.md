@@ -40,7 +40,7 @@ If all is properly configured, on push, a Github action with the name "CI" shoul
 2) Run a single command (a simple print)
 3) Run multiple lines of commands (some prints and a timestamp)
 
-The workflow will clean up its own resources afterwards. Viewing the committs in the Github actions pane allows you to see the job status and output of each step.
+The workflow will clean up its own resources afterwards. Viewing the commits in the Github actions pane allows you to see the job status and output of each step.
 
 ![output](imgs/workflow_status.png)
 
