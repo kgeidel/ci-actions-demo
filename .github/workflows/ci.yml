@@ -25,11 +25,11 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Execute a command
         run: echo CI/CD is running!
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Run a few commands like its a simple script
         run: |
           echo Here is a more complex...
           echo set of instructions...
