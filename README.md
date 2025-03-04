@@ -27,6 +27,7 @@ echo "echo SOME TEXT THAT WILL BE RECOGNIZED AS NEW" >> some_script.sh
 ./some_script.sh
 
 # Push the changes to trigger the CI action
+git add *
 git commit -m "Changes that should trigger CI"
 git push
 
